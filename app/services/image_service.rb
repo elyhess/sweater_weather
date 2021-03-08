@@ -1,4 +1,4 @@
-class BackgroundsService
+class ImageService
 	class << self
 
 		def random_image(location)
