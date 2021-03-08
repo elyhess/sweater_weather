@@ -6,7 +6,6 @@ describe "Forecast API" do
 			headers = {'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json'}
 			get '/api/v1/forecast?location=Boulder,co', headers: headers
 
-			expect(response).to be_successful
 			data = JSON.parse(response.body, symbolize_names: true)
 
 			expect(response).to be_successful
