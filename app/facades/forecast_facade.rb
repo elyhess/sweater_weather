@@ -27,5 +27,9 @@ class ForecastFacade
 			end
 		end
 
+		def food_forecast(lat, lon)
+			ForecastService.weather_report(lat, lon)
+		end
+
 	end
 end
