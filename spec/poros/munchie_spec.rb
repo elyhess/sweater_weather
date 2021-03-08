@@ -17,6 +17,6 @@ describe Munchie, :vcr do
 		expect(munchie.restaurant[:name]).to eq("Crown Burgers")
 		expect(munchie.restaurant[:address]).to eq("2192 S Colorado BlvdDenver, CO 80222")
 		expect(munchie.travel_time).to be_a(String)
-		expect(munchie.travel_time).to eq("00:34:01")
+		expect(munchie.travel_time).to eq("34 minutes 1 seconds")
 	end
 end
