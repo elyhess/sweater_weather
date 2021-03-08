@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=<UNSPLASH_API_KEY>&content_filter=high&count=1&query=Denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1032'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"b2024678d37f0910943d79cc8f524b8c"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '47'
+      X-Request-Id:
+      - f446deed-2605-4d52-a9e2-e33cd973acaf
+      X-Runtime:
+      - '0.045031'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Mar 2021 16:20:46 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-dca17760-DCA, cache-den8275-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1615220447.822941,VS0,VE108
+      Vary:
+      - Accept-Encoding, Origin,Authorization
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"0w26J0JGj1I","created_at":"2021-02-25T11:41:34-05:00","updated_at":"2021-03-08T09:31:11-05:00","promoted_at":null,"width":2712,"height":4060,"color":"#40260c","blur_hash":"LnHd?5~Wx^%2^%x[S6WCtQozogkC","description":"Golden","alt_description":"woman
+        in black jacket wearing yellow hard hat","urls":{"raw":"https://images.unsplash.com/photo-1614270246588-98b5863a877c?ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1614270246588-98b5863a877c?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1614270246588-98b5863a877c?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1614270246588-98b5863a877c?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1614270246588-98b5863a877c?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/0w26J0JGj1I","html":"https://unsplash.com/photos/0w26J0JGj1I","download":"https://unsplash.com/photos/0w26J0JGj1I/download","download_location":"https://api.unsplash.com/photos/0w26J0JGj1I/download"},"categories":[],"likes":15,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"user":{"id":"dg4S8j5TzmE","updated_at":"2021-03-08T10:52:03-05:00","username":"karsten116","name":"Karsten
+        Winegeart","first_name":"Karsten","last_name":"Winegeart","twitter_username":"karsten116","portfolio_url":null,"bio":"IG
+        - @karsten116","location":"Austin Texas","links":{"self":"https://api.unsplash.com/users/karsten116","html":"https://unsplash.com/@karsten116","photos":"https://api.unsplash.com/users/karsten116/photos","likes":"https://api.unsplash.com/users/karsten116/likes","portfolio":"https://api.unsplash.com/users/karsten116/portfolio","following":"https://api.unsplash.com/users/karsten116/following","followers":"https://api.unsplash.com/users/karsten116/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1583427783052-3da8ceab5579image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1583427783052-3da8ceab5579image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1583427783052-3da8ceab5579image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"karsten116","total_collections":0,"total_likes":324,"total_photos":483,"accepted_tos":true,"for_hire":true},"exif":{"make":null,"model":null,"exposure_time":"1/200","aperture":"4.0","focal_length":"35.0","iso":50},"location":{"title":"Boise,
+        ID, USA","name":"Boise, ID, USA","city":"Boise","country":"United States","position":{"latitude":43.615019,"longitude":-116.202314}},"views":62759,"downloads":339}]'
+  recorded_at: Mon, 08 Mar 2021 16:20:46 GMT
+recorded_with: VCR 6.0.0

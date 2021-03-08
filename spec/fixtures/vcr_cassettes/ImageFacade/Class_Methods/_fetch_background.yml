@@ -1,0 +1,80 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=<UNSPLASH_API_KEY>&content_filter=high&count=1&query=Denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1143'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"c8cb67f889a4ba54c657b6b54cf6eab0"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '48'
+      X-Request-Id:
+      - b2e762c8-aa70-4f09-8376-800e96679e2b
+      X-Runtime:
+      - '0.192576'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Mar 2021 16:20:45 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-dca12924-DCA, cache-den8246-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1615220446.635553,VS0,VE253
+      Vary:
+      - Accept-Encoding, Origin,Authorization
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"CAOfupd0C1o","created_at":"2021-02-06T11:03:15-05:00","updated_at":"2021-03-08T06:17:04-05:00","promoted_at":null,"width":3872,"height":2592,"color":"#268cd9","blur_hash":"LqDdxDbbofofThWVaeay4nj[ayWC","description":null,"alt_description":"green
+        trees near mountain under blue sky during daytime","urls":{"raw":"https://images.unsplash.com/photo-1612626870016-5d8e9eb2df3d?ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1612626870016-5d8e9eb2df3d?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1612626870016-5d8e9eb2df3d?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1612626870016-5d8e9eb2df3d?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1612626870016-5d8e9eb2df3d?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/CAOfupd0C1o","html":"https://unsplash.com/photos/CAOfupd0C1o","download":"https://unsplash.com/photos/CAOfupd0C1o/download","download_location":"https://api.unsplash.com/photos/CAOfupd0C1o/download"},"categories":[],"likes":0,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"user":{"id":"x6SzuKg-NIg","updated_at":"2021-03-07T15:32:46-05:00","username":"navassios","name":"Nicholas
+        Vassios","first_name":"Nicholas","last_name":"Vassios","twitter_username":null,"portfolio_url":null,"bio":"I
+        do photography as a hobby. I enjoy nature, traveling, and making the best
+        of what I have to work with. \r\n Rocking a Sony Alpha 100. ","location":"Neenah,
+        WI","links":{"self":"https://api.unsplash.com/users/navassios","html":"https://unsplash.com/@navassios","photos":"https://api.unsplash.com/users/navassios/photos","likes":"https://api.unsplash.com/users/navassios/likes","portfolio":"https://api.unsplash.com/users/navassios/portfolio","following":"https://api.unsplash.com/users/navassios/following","followers":"https://api.unsplash.com/users/navassios/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1609614827264-fa23d4fcff21image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1609614827264-fa23d4fcff21image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1609614827264-fa23d4fcff21image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"n.a.v.photography","total_collections":6,"total_likes":23,"total_photos":60,"accepted_tos":true,"for_hire":true},"exif":{"make":"SONY","model":"DSLR-A100","exposure_time":"1/320","aperture":"8.0","focal_length":"50.0","iso":100},"location":{"title":"Colorado
+        Springs, CO, USA","name":"Colorado Springs, CO, USA","city":"Colorado Springs","country":"United
+        States","position":{"latitude":38.833882,"longitude":-104.821363}},"views":9637,"downloads":36}]'
+  recorded_at: Mon, 08 Mar 2021 16:20:45 GMT
+recorded_with: VCR 6.0.0
