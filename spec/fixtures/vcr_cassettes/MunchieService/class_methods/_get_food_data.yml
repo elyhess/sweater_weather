@@ -1,0 +1,78 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=1&location=Denver,co&open_now=true&term=Burger
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Authorization:
+      - Bearer 6p0ecZl828-iS6ZrCeywvNMou2-CfB0_hJRHa6SOZbqIb6X4ENaWOzBYFJiBwrMF4cs4zQ5za9E9rRl_PbKdivn8sr3rpf2hSpO9DgPhtzColMRp843I6temVZtFYHYx
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      X-Zipkin-Id:
+      - 00d4550e0c5474f9
+      Ratelimit-Remaining:
+      - '4972'
+      Ratelimit-Dailylimit:
+      - '5000'
+      Server:
+      - envoy
+      Ratelimit-Resettime:
+      - '2021-03-09T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--uswest2-8665dfcd87-xfzfs; site=public_api_v3
+      X-B3-Sampled:
+      - '0'
+      X-Proxied:
+      - 10-69-113-152-uswest2aprod
+      X-Extlb:
+      - 10-69-113-152-uswest2aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Mar 2021 16:55:34 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8269-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "qL1TAAGQNh_7ddxW1U7fOg", "alias": "crown-burgers-denver",
+        "name": "Crown Burgers", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/yrlzhmxSBqF4njvs9hIWIA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/crown-burgers-denver?adjust_creative=whnyrr4ePL4kjQUoziRbMA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=whnyrr4ePL4kjQUoziRbMA",
+        "review_count": 290, "categories": [{"alias": "burgers", "title": "Burgers"},
+        {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 4.0,
+        "coordinates": {"latitude": 39.6767845153809, "longitude": -104.940330505371},
+        "transactions": ["delivery"], "price": "$", "location": {"address1": "2192
+        S Colorado Blvd", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80222", "country": "US", "state": "CO", "display_address": ["2192 S Colorado
+        Blvd", "Denver, CO 80222"]}, "phone": "+13037539696", "display_phone": "(303)
+        753-9696", "distance": 7001.781138922748}], "total": 773, "region": {"center":
+        {"longitude": -104.97024536132812, "latitude": 39.73552421220229}}}'
+  recorded_at: Mon, 08 Mar 2021 16:55:34 GMT
+recorded_with: VCR 6.0.0
