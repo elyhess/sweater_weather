@@ -1,4 +1,4 @@
-class Background
+class Image
 	attr_reader :id, :image, :credit
 
 	def initialize(data, location)
@@ -8,7 +8,7 @@ class Background
 			urls: data[:urls]
 		}
 		@credit = {
-			author: data[:user][:user_name],
+			author: data[:user][:username],
 			profile_img: data[:user][:profile_image][:medium],
 			links: data[:user][:links]
 		}
