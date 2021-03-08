@@ -45,7 +45,7 @@ describe "Backgrounds API" do
 
 	describe "Sad Path" do
 		it 'returns an error if the Unsplash API is unavailable' do
-			stub_get_json("https://api.unsplash.com/photos/random?client_id=#{ENV['UNSPLASH_API_KEY']}&query=cats&count=1&content_filter=high", 503)
+			stub_get_json("https://api.unsplash.com/photos/random?client_id=#{ENV['UNSPLASH_API_KEY']}&query=Boulder,co&count=1&content_filter=high", 503)
 
 			get '/api/v1/backgrounds?location=Boulder,co'
 
@@ -56,27 +56,26 @@ describe "Backgrounds API" do
 			expect(data[:error]).to eq("API currently unavailable. Hold tight, we're working on it!")
 		end
 
-		# it 'returns error if location param is not present' do
-		# 	headers = {'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json'}
-		# 	get '/api/v1/forecast', headers: headers
+		it 'returns error if location param is not present' do
+			get '/api/v1/backgrounds'
+
+			data = JSON.parse(response.body, symbolize_names: true)
+			expect(data).to be_a(Hash)
+			expect(data[:error]).to be_a(String)
+			expect(data[:error]).to eq("Location missing or incorrectly entered.")
+		end
 		#
-		# 	data = JSON.parse(response.body, symbolize_names: true)
-		# 	expect(data).to be_a(Hash)
-		# 	expect(data[:error]).to be_a(String)
-		# 	expect(data[:error]).to eq("Location missing or incorrectly entered.")
-		# end
-		#
-		# it 'returns error if location param is blank' do
-		# 	headers = {'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json'}
-		# 	get '/api/v1/forecast?location', headers: headers
-		#
-		# 	data = JSON.parse(response.body, symbolize_names: true)
-		# 	expect(data).to be_a(Hash)
-		# 	expect(data[:error]).to be_a(String)
-		# 	expect(data[:error]).to eq("Location missing or incorrectly entered.")
-		# end
-		#
-		# it 'returns an error if the location is invalid / cannot be found' do
-		# end
+		it 'returns error if location param is blank' do
+			get '/api/v1/backgrounds?location'
+
+			data = JSON.parse(response.body, symbolize_names: true)
+			expect(data).to be_a(Hash)
+			expect(data[:error]).to be_a(String)
+			expect(data[:error]).to eq("Location missing or incorrectly entered.")
+		end
+
+		it 'returns an error if the location is invalid / cannot be found' do
+
+		end
 	end
 end
