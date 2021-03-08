@@ -40,5 +40,20 @@ describe ForecastFacade, :vcr do
 			expect(ForecastFacade.daily_weather(forecast)).to be_an(Array)
 			expect(ForecastFacade.daily_weather(forecast).first).to be_an_instance_of(DailyWeather)
 		end
+
+		it '::food_forecast' do
+			food_forecast = ForecastFacade.food_forecast(40.015831, -105.27927)
+
+			expect(food_forecast).to be_an(Hash)
+
+			expect(food_forecast).to be_a Hash
+			expect(food_forecast).to have_key(:lat)
+			expect(food_forecast).to have_key(:lon)
+			expect(food_forecast).to have_key(:timezone)
+			expect(food_forecast).to have_key(:timezone_offset)
+			expect(food_forecast).to have_key(:current)
+			expect(food_forecast).to have_key(:hourly)
+			expect(food_forecast).to have_key(:daily)
+		end
 	end
 end
