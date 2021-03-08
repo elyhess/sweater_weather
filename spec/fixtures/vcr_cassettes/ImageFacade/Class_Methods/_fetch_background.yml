@@ -1,0 +1,145 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=<UNSPLASH_API_KEY>&content_filter=high&count=1&query=Denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1078'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"c834ce9dfebc0e35a7745a0d0e052b61"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '41'
+      X-Request-Id:
+      - f27e4499-f1e1-4fec-80f3-7d0798574d05
+      X-Runtime:
+      - '0.030732'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Mar 2021 00:28:06 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-dca17776-DCA, cache-den8259-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1615163286.263422,VS0,VE81
+      Vary:
+      - Accept-Encoding, Origin,Authorization
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"Kumw2dCVFl0","created_at":"2021-02-16T18:25:51-05:00","updated_at":"2021-03-07T12:17:04-05:00","promoted_at":null,"width":6000,"height":3376,"color":"#a6a6a6","blur_hash":"LAJuM@Rj4Tofxuaya|kCofoMxtj[","description":"Chairlift
+        in Snowstorm","alt_description":"white cable car on foggy weather","urls":{"raw":"https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/Kumw2dCVFl0","html":"https://unsplash.com/photos/Kumw2dCVFl0","download":"https://unsplash.com/photos/Kumw2dCVFl0/download","download_location":"https://api.unsplash.com/photos/Kumw2dCVFl0/download"},"categories":[],"likes":0,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"user":{"id":"OMdeq0JX-4o","updated_at":"2021-03-07T17:26:31-05:00","username":"joshuas","name":"Joshua
+        Sukoff","first_name":"Joshua","last_name":"Sukoff","twitter_username":"JoshSukoff","portfolio_url":null,"bio":"17
+        Year Old | Avid Skier | Traveling Photographer | NYC\r\n","location":"New
+        York, New York","links":{"self":"https://api.unsplash.com/users/joshuas","html":"https://unsplash.com/@joshuas","photos":"https://api.unsplash.com/users/joshuas/photos","likes":"https://api.unsplash.com/users/joshuas/likes","portfolio":"https://api.unsplash.com/users/joshuas/portfolio","following":"https://api.unsplash.com/users/joshuas/following","followers":"https://api.unsplash.com/users/joshuas/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1591118273937-f67d36f999b7image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1591118273937-f67d36f999b7image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1591118273937-f67d36f999b7image?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"Joshuasukoff","total_collections":3,"total_likes":14,"total_photos":140,"accepted_tos":true,"for_hire":true},"exif":{"make":"Canon","model":"Canon
+        EOS M3","exposure_time":"1/2000","aperture":"5.6","focal_length":"21.0","iso":200},"location":{"title":"Aspen,
+        CO, USA","name":"Aspen, CO, USA","city":"Aspen","country":"United States","position":{"latitude":39.191098,"longitude":-106.817539}},"views":6568,"downloads":50}]'
+  recorded_at: Mon, 08 Mar 2021 00:28:06 GMT
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=<UNSPLASH_API_KEY>&content_filter=high&count=1&query%5B%5D%5Balt_description%5D=white%20cable%20car%20on%20foggy%20weather&query%5B%5D%5Bblur_hash%5D=LAJuM@Rj4Tofxuaya%7CkCofoMxtj%5B&query%5B%5D%5Bcategories%5D%5B0%5D&query%5B%5D%5Bcolor%5D=%23a6a6a6&query%5B%5D%5Bcreated_at%5D=2021-02-16T18:25:51-05:00&query%5B%5D%5Bcurrent_user_collections%5D%5B0%5D&query%5B%5D%5Bdescription%5D=Chairlift%20in%20Snowstorm&query%5B%5D%5Bdownloads%5D=50&query%5B%5D%5Bexif%5D%5Baperture%5D=5.6&query%5B%5D%5Bexif%5D%5Bexposure_time%5D=1/2000&query%5B%5D%5Bexif%5D%5Bfocal_length%5D=21.0&query%5B%5D%5Bexif%5D%5Biso%5D=200&query%5B%5D%5Bexif%5D%5Bmake%5D=Canon&query%5B%5D%5Bexif%5D%5Bmodel%5D=Canon%20EOS%20M3&query%5B%5D%5Bheight%5D=3376&query%5B%5D%5Bid%5D=Kumw2dCVFl0&query%5B%5D%5Bliked_by_user%5D=false&query%5B%5D%5Blikes%5D=0&query%5B%5D%5Blinks%5D%5Bdownload%5D=https://unsplash.com/photos/Kumw2dCVFl0/download&query%5B%5D%5Blinks%5D%5Bdownload_location%5D=https://api.unsplash.com/photos/Kumw2dCVFl0/download&query%5B%5D%5Blinks%5D%5Bhtml%5D=https://unsplash.com/photos/Kumw2dCVFl0&query%5B%5D%5Blinks%5D%5Bself%5D=https://api.unsplash.com/photos/Kumw2dCVFl0&query%5B%5D%5Blocation%5D%5Bcity%5D=Aspen&query%5B%5D%5Blocation%5D%5Bcountry%5D=United%20States&query%5B%5D%5Blocation%5D%5Bname%5D=Aspen,%20CO,%20USA&query%5B%5D%5Blocation%5D%5Bposition%5D%5Blatitude%5D=39.191098&query%5B%5D%5Blocation%5D%5Bposition%5D%5Blongitude%5D=-106.817539&query%5B%5D%5Blocation%5D%5Btitle%5D=Aspen,%20CO,%20USA&query%5B%5D%5Bpromoted_at%5D&query%5B%5D%5Bsponsorship%5D&query%5B%5D%5Bupdated_at%5D=2021-03-07T12:17:04-05:00&query%5B%5D%5Burls%5D%5Bfull%5D=https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy%26cs=srgb%26fm=jpg%26ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8%26ixlib=rb-1.2.1%26q=85&query%5B%5D%5Burls%5D%5Braw%5D=https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8%26ixlib=rb-1.2.1&query%5B%5D%5Burls%5D%5Bregular%5D=https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy%26cs=tinysrgb%26fit=max%26fm=jpg%26ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8%26ixlib=rb-1.2.1%26q=80%26w=1080&query%5B%5D%5Burls%5D%5Bsmall%5D=https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy%26cs=tinysrgb%26fit=max%26fm=jpg%26ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8%26ixlib=rb-1.2.1%26q=80%26w=400&query%5B%5D%5Burls%5D%5Bthumb%5D=https://images.unsplash.com/photo-1613517661934-4c7f48ea92e1?crop=entropy%26cs=tinysrgb%26fit=max%26fm=jpg%26ixid=MXwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8%26ixlib=rb-1.2.1%26q=80%26w=200&query%5B%5D%5Buser%5D%5Baccepted_tos%5D=true&query%5B%5D%5Buser%5D%5Bbio%5D=17%20Year%20Old%20%7C%20Avid%20Skier%20%7C%20Traveling%20Photographer%20%7C%20NYC%0D%0A&query%5B%5D%5Buser%5D%5Bfirst_name%5D=Joshua&query%5B%5D%5Buser%5D%5Bfor_hire%5D=true&query%5B%5D%5Buser%5D%5Bid%5D=OMdeq0JX-4o&query%5B%5D%5Buser%5D%5Binstagram_username%5D=Joshuasukoff&query%5B%5D%5Buser%5D%5Blast_name%5D=Sukoff&query%5B%5D%5Buser%5D%5Blinks%5D%5Bfollowers%5D=https://api.unsplash.com/users/joshuas/followers&query%5B%5D%5Buser%5D%5Blinks%5D%5Bfollowing%5D=https://api.unsplash.com/users/joshuas/following&query%5B%5D%5Buser%5D%5Blinks%5D%5Bhtml%5D=https://unsplash.com/@joshuas&query%5B%5D%5Buser%5D%5Blinks%5D%5Blikes%5D=https://api.unsplash.com/users/joshuas/likes&query%5B%5D%5Buser%5D%5Blinks%5D%5Bphotos%5D=https://api.unsplash.com/users/joshuas/photos&query%5B%5D%5Buser%5D%5Blinks%5D%5Bportfolio%5D=https://api.unsplash.com/users/joshuas/portfolio&query%5B%5D%5Buser%5D%5Blinks%5D%5Bself%5D=https://api.unsplash.com/users/joshuas&query%5B%5D%5Buser%5D%5Blocation%5D=New%20York,%20New%20York&query%5B%5D%5Buser%5D%5Bname%5D=Joshua%20Sukoff&query%5B%5D%5Buser%5D%5Bportfolio_url%5D&query%5B%5D%5Buser%5D%5Bprofile_image%5D%5Blarge%5D=https://images.unsplash.com/profile-1591118273937-f67d36f999b7image?ixlib=rb-1.2.1%26q=80%26fm=jpg%26crop=faces%26cs=tinysrgb%26fit=crop%26h=128%26w=128&query%5B%5D%5Buser%5D%5Bprofile_image%5D%5Bmedium%5D=https://images.unsplash.com/profile-1591118273937-f67d36f999b7image?ixlib=rb-1.2.1%26q=80%26fm=jpg%26crop=faces%26cs=tinysrgb%26fit=crop%26h=64%26w=64&query%5B%5D%5Buser%5D%5Bprofile_image%5D%5Bsmall%5D=https://images.unsplash.com/profile-1591118273937-f67d36f999b7image?ixlib=rb-1.2.1%26q=80%26fm=jpg%26crop=faces%26cs=tinysrgb%26fit=crop%26h=32%26w=32&query%5B%5D%5Buser%5D%5Btotal_collections%5D=3&query%5B%5D%5Buser%5D%5Btotal_likes%5D=14&query%5B%5D%5Buser%5D%5Btotal_photos%5D=140&query%5B%5D%5Buser%5D%5Btwitter_username%5D=JoshSukoff&query%5B%5D%5Buser%5D%5Bupdated_at%5D=2021-03-07T17:26:31-05:00&query%5B%5D%5Buser%5D%5Busername%5D=joshuas&query%5B%5D%5Bviews%5D=6568&query%5B%5D%5Bwidth%5D=6000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Connection:
+      - keep-alive
+      Server:
+      - Cowboy
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '40'
+      X-Request-Id:
+      - ed3ce882-d678-4a42-9903-eaa3b47d3e1f
+      X-Runtime:
+      - '0.022898'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Mar 2021 00:28:06 GMT
+      X-Served-By:
+      - cache-dca17756-DCA, cache-den8230-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1615163286.475115,VS0,VE85
+      Vary:
+      - Accept-Encoding, Origin,Authorization
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"errors":["query is invalid"]}'
+  recorded_at: Mon, 08 Mar 2021 00:28:06 GMT
+recorded_with: VCR 6.0.0
