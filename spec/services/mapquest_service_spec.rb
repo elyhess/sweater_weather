@@ -6,7 +6,6 @@ describe MapquestService, :vcr do
 			data = MapquestService.get_location_coordinates("Boulder,co")
 
 			expect(data).to be_a Hash
-			location_data = data[:results][0][:locations][0]
 
 			expect(data[:results][0][:locations][0]).to have_key :latLng
 			expect(data[:results][0][:locations][0][:latLng]).to be_a(Hash)
