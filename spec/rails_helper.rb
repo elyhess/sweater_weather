@@ -23,6 +23,7 @@ VCR.configure do |config|
   config.configure_rspec_metadata!
   config.filter_sensitive_data('<mapquest_key>') { ENV['MAPQUEST_API_KEY'] }
   config.filter_sensitive_data('<WEATHER_API_KEY>') { ENV['WEATHER_API_KEY'] }
+  config.filter_sensitive_data('<UNSPLASH_API_KEY>') { ENV['UNSPLASH_API_KEY'] }
 end
 
 def stub_get_json(url, status)
