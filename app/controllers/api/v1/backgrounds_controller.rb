@@ -4,7 +4,7 @@ class Api::V1::BackgroundsController < ApplicationController
 			background_image = ImageFacade.fetch_background(params[:location])
 			render json: ImageSerializer.new(background_image)
 		else
-			render json: { error: "Location missing or incorrectly entered."}
+			render json: { error: "Location missing or incorrectly entered."}, status: :bad_request
 		end
 	end
 end
