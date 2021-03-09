@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Image, :vcr do
 	it 'exists and has attributes' do
 		location = "Denver,co"
-		image_data = ImageService.random_image(location).first
+		image_data = ImageService.search_image(location)[:results][0]
 
 		image = Image.new(image_data, "Denver,co")
 
@@ -18,6 +18,6 @@ describe Image, :vcr do
 		expect(image.credit.keys.count).to eq(3)
 		expect(image.credit[:profile_img]).to be_a String
 		expect(image.credit[:author]).to eq(image_data[:user][:username])
-		expect(image.credit[:links]).to eq(image_data[:user][:links])
+		expect(image.credit[:links]).to eq(image_data[:user][:links][:html])
 	end
 end

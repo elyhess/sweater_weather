@@ -1,11 +1,12 @@
 class ImageService
 	class << self
 
-		def random_image(location)
-			response = conn.get('/photos/random') do |req|
+		def search_image(location)
+			response = conn.get('/search/photos') do |req|
 				req.params[:client_id] = ENV['UNSPLASH_API_KEY']
 				req.params[:query] = location
-				req.params[:count] = 1
+				req.params[:page] = 1
+				req.params[:per_page] = 1
 				req.params[:content_filter] = "high"
 			end
 			parse(response)

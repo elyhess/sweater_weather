@@ -35,17 +35,13 @@ describe "Backgrounds API" do
 			expect(data[:data][:attributes][:credit][:author]).to be_a(String)
 			expect(data[:data][:attributes][:credit]).to have_key(:profile_img)
 			expect(data[:data][:attributes][:credit][:profile_img]).to be_a(String)
-			expect(data[:data][:attributes][:credit][:links]).to be_a(Hash)
-			expect(data[:data][:attributes][:credit][:links].keys).to eq([:self, :html, :photos, :likes, :portfolio, :following, :followers])
-			data[:data][:attributes][:credit][:links].values.each do |value|
-				expect(value).to be_a String
-			end
+			expect(data[:data][:attributes][:credit][:links]).to be_a(String)
 		end
 	end
 
 	describe "Sad Path" do
 		it 'returns an error if the Unsplash API is unavailable' do
-			stub_get_json("https://api.unsplash.com/photos/random?client_id=#{ENV['UNSPLASH_API_KEY']}&query=Boulder,co&count=1&content_filter=high", 503)
+			stub_get_json("https://api.unsplash.com/search/photos?client_id=#{ENV['UNSPLASH_API_KEY']}&content_filter=high&page=1&per_page=1&query=Boulder,co", 503)
 
 			get '/api/v1/backgrounds?location=Boulder,co'
 

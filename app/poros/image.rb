@@ -12,7 +12,7 @@ class Image
 		@credit = {
 			author:      data[:user][:username],
 			profile_img: data[:user][:profile_image][:medium],
-			links:       data[:user][:links]
+			links:       data[:user][:links][:html]
 		}
 	end
 end

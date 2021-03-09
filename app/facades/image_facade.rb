@@ -1,8 +1,8 @@
 class ImageFacade
 	class << self
-		def fetch_background(location)
-			image_data = ImageService.random_image(location).first
-			Image.new(image_data, location)
+		def create_image(location)
+			image_data = ImageService.search_image(location)
+			Image.new(image_data[:results][0], location)
 		end
 	end
 end
