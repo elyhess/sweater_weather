@@ -11,7 +11,7 @@ class ApplicationController < ActionController::API
 	end
 
 	def reject_query_params
-		if !request.query_parameters.empty?
+		unless request.query_parameters.empty?
 			render json: { error: "Data must be sent in request body." }, status: :bad_request
 		end
 	end
