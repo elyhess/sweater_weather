@@ -104,6 +104,7 @@ describe "Forecast API" do
 			headers = {'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json'}
 			get '/api/v1/forecast', headers: headers
 
+			expect(response.status).to eq(400)
 			data = JSON.parse(response.body, symbolize_names: true)
 			expect(data).to be_a(Hash)
 			expect(data[:error]).to be_a(String)
@@ -114,14 +115,22 @@ describe "Forecast API" do
 			headers = {'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json'}
 			get '/api/v1/forecast?location', headers: headers
 
+			expect(response.status).to eq(400)
 			data = JSON.parse(response.body, symbolize_names: true)
 			expect(data).to be_a(Hash)
 			expect(data[:error]).to be_a(String)
 			expect(data[:error]).to eq("Location missing or incorrectly entered.")
 		end
 
-		it 'returns an error if the location is invalid / cannot be found' do
+		it 'returns an error if the location is invalid / cannot be found', :vcr do
+			headers = {'CONTENT_TYPE' => 'application/json', 'ACCEPT' => 'application/json'}
+			get '/api/v1/forecast?location=notareal,location,atall', headers: headers
 
+			expect(response.status).to eq(400)
+			data = JSON.parse(response.body, symbolize_names: true)
+			expect(data).to be_a(Hash)
+			expect(data[:error]).to be_a(String)
+			expect(data[:error]).to eq("Please enter a valid location")
 		end
 	end
 end
