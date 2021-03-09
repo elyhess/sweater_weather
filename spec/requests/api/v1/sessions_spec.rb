@@ -114,7 +114,7 @@ describe "Sessions API" do
 
 			expect(user).to be_a(Hash)
 			expect(user[:error]).to be_a(String)
-			expect(user[:error]).to eq("User data must be sent in request body.")
+			expect(user[:error]).to eq("Data must be sent in request body.")
 		end
 	end
 end

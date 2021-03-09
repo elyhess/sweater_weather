@@ -4,7 +4,7 @@ class Api::V1::ForecastController < ApplicationController
 			forecast = ForecastFacade.fetch_forecast(params[:location])
 			render json: ForecastSerializer.new(forecast)
 		else
-			render json: { error: "Location missing or incorrectly entered."}
+			render json: { error: "Location missing or incorrectly entered."}, status: :bad_request
 		end
 	end
 end

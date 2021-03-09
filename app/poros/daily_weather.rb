@@ -8,12 +8,12 @@ class DailyWeather
 	            :icon
 
 	def initialize(data)
-		@date = Time.at(data[:dt]).strftime('%Y-%m-%d')
-		@sunrise = Time.at(data[:sunrise]).getlocal.to_s
-		@sunset = Time.at(data[:sunset]).getlocal.to_s
-		@max_temp = data[:temp][:max]
-		@min_temp = data[:temp][:min]
+		@date       = Time.at(data[:dt]).strftime('%Y-%m-%d')
+		@sunrise    = Time.at(data[:sunrise]).getlocal.to_s
+		@sunset     = Time.at(data[:sunset]).getlocal.to_s
+		@max_temp   = data[:temp][:max]
+		@min_temp   = data[:temp][:min]
 		@conditions = data[:weather][0][:description]
-		@icon = data[:weather][0][:icon]
+		@icon       = data[:weather][0][:icon]
 	end
 end

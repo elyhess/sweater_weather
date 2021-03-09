@@ -9,6 +9,15 @@ class MapquestService
 			parse(response)
 		end
 
+		def get_estimated_travel_time(start, destination)
+			response = conn.get("/directions/v2/route") do |req|
+				req.params[:key] = ENV['MAPQUEST_API_KEY']
+				req.params[:from] = start
+				req.params[:to] = destination
+			end
+			parse(response)
+		end
+
 		private
 
 		def conn

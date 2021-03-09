@@ -1,8 +1,19 @@
 class ApplicationController < ActionController::API
 	rescue_from JSON::ParserError, with: :json_render_failure
+	rescue_from ArgumentError, with: :bad_coordinates
 
 	def json_render_failure
-		render json: { error: "API currently unavailable. Hold tight, we're working on it!"}, status: 503
+		render json: { error: "API currently unavailable. Hold tight, we're working on it!" }, status: :service_unavailable
+	end
+
+	def bad_coordinates
+		render json: { error: "Please enter a valid location" }, status: :bad_request
+	end
+
+	def reject_query_params
+		if !request.query_parameters.empty?
+			render json: { error: "Data must be sent in request body." }, status: :bad_request
+		end
 	end
 
 end
