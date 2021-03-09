@@ -1,0 +1,83 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=<UNSPLASH_API_KEY>&content_filter=high&count=1&query=Boulder,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1240'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"1370579180f38f5380865ba7d59d328c"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '47'
+      X-Request-Id:
+      - 79e065ba-30b6-43fe-867d-aa469f439fc1
+      X-Runtime:
+      - '0.081644'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 09 Mar 2021 15:32:49 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-dca17729-DCA, cache-den8232-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1615303969.204956,VS0,VE132
+      Vary:
+      - Accept-Encoding, Origin,Authorization
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"VzS2ceZVsY4","created_at":"2021-03-04T14:31:33-05:00","updated_at":"2021-03-08T18:24:14-05:00","promoted_at":null,"width":7571,"height":5052,"color":"#262626","blur_hash":"L6Av@8^*HqIVng0MT1NaiuD*tmRQ","description":null,"alt_description":"woman
+        in blue and white striped long sleeve shirt using macbook air","urls":{"raw":"https://images.unsplash.com/photo-1614886037815-5b9e586094f2?ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1614886037815-5b9e586094f2?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1614886037815-5b9e586094f2?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1614886037815-5b9e586094f2?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1614886037815-5b9e586094f2?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/VzS2ceZVsY4","html":"https://unsplash.com/photos/VzS2ceZVsY4","download":"https://unsplash.com/photos/VzS2ceZVsY4/download","download_location":"https://api.unsplash.com/photos/VzS2ceZVsY4/download?ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk"},"categories":[],"likes":0,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"user":{"id":"CqQUBrRwiaM","updated_at":"2021-03-07T23:01:35-05:00","username":"darrylkelly_","name":"Darryl
+        Kelly","first_name":"Darryl","last_name":"Kelly","twitter_username":null,"portfolio_url":"http://hecticapp.com","bio":"CEO
+        \u0026 Co-Founder at Hecticapp.com | Photographer. Philanthropist. Thought
+        Catalyst. Olivia \u0026 Noah''s Dad. On a journey in embracing imperfection
+        and creating less space for fear and shame.","location":"Boulder, Colorado
+        ","links":{"self":"https://api.unsplash.com/users/darrylkelly_","html":"https://unsplash.com/@darrylkelly_","photos":"https://api.unsplash.com/users/darrylkelly_/photos","likes":"https://api.unsplash.com/users/darrylkelly_/likes","portfolio":"https://api.unsplash.com/users/darrylkelly_/portfolio","following":"https://api.unsplash.com/users/darrylkelly_/following","followers":"https://api.unsplash.com/users/darrylkelly_/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1613617321511-7a1165176e1eimage?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1613617321511-7a1165176e1eimage?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1613617321511-7a1165176e1eimage?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"darrylkelly_","total_collections":0,"total_likes":0,"total_photos":17,"accepted_tos":true,"for_hire":false},"exif":{"make":"LEICA
+        CAMERA AG","model":"LEICA Q2","exposure_time":"1/125","aperture":"3.5","focal_length":"28.0","iso":400},"location":{"title":"Basecamp
+        Coworking, West South Boulder Road, Lafayette, CO, USA","name":"Basecamp Coworking,
+        West South Boulder Road, Lafayette, CO, USA","city":"Lafayette","country":"United
+        States","position":{"latitude":39.985616,"longitude":-105.095098}},"views":556,"downloads":6}]'
+  recorded_at: Tue, 09 Mar 2021 15:32:49 GMT
+recorded_with: VCR 6.0.0

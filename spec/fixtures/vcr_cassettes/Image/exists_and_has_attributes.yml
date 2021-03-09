@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.unsplash.com/photos/random?client_id=<UNSPLASH_API_KEY>&content_filter=high&count=1&query=Denver,co
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.3.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1135'
+      Server:
+      - Cowboy
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Request-Method:
+      - "*"
+      Access-Control-Allow-Headers:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Link,X-Total,X-Per-Page,X-RateLimit-Limit,X-RateLimit-Remaining
+      Cache-Control:
+      - no-cache, no-store, must-revalidate
+      Content-Type:
+      - application/json
+      Etag:
+      - W/"d9ba6d87ed1137c83d71ab68c8c7c714"
+      X-Ratelimit-Limit:
+      - '50'
+      X-Ratelimit-Remaining:
+      - '48'
+      X-Request-Id:
+      - bb691f36-55f8-43d9-b84e-b6570051ce1c
+      X-Runtime:
+      - '0.040711'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      Via:
+      - 1.1 vegur, 1.1 varnish, 1.1 varnish
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Tue, 09 Mar 2021 15:32:49 GMT
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-dca17749-DCA, cache-den8220-DEN
+      X-Cache:
+      - MISS, MISS
+      X-Cache-Hits:
+      - 0, 0
+      X-Timer:
+      - S1615303969.968239,VS0,VE96
+      Vary:
+      - Accept-Encoding, Origin,Authorization
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"id":"5MODaVihXNo","created_at":"2021-02-23T00:32:50-05:00","updated_at":"2021-03-08T21:29:21-05:00","promoted_at":null,"width":4049,"height":6073,"color":"#262626","blur_hash":"LuD,TMt74mRjo~bIaIe.D%WCx[s.","description":"Sunset
+        + Downtown Denver","alt_description":"white and blue high rise building","urls":{"raw":"https://images.unsplash.com/photo-1614057695278-86e08470b189?ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1","full":"https://images.unsplash.com/photo-1614057695278-86e08470b189?crop=entropy\u0026cs=srgb\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=85","regular":"https://images.unsplash.com/photo-1614057695278-86e08470b189?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=1080","small":"https://images.unsplash.com/photo-1614057695278-86e08470b189?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=400","thumb":"https://images.unsplash.com/photo-1614057695278-86e08470b189?crop=entropy\u0026cs=tinysrgb\u0026fit=max\u0026fm=jpg\u0026ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk\u0026ixlib=rb-1.2.1\u0026q=80\u0026w=200"},"links":{"self":"https://api.unsplash.com/photos/5MODaVihXNo","html":"https://unsplash.com/photos/5MODaVihXNo","download":"https://unsplash.com/photos/5MODaVihXNo/download","download_location":"https://api.unsplash.com/photos/5MODaVihXNo/download?ixid=MnwyMTMwNDV8MHwxfHJhbmRvbXx8fHx8fHx8fDE2MTUzMDM5Njk"},"categories":[],"likes":0,"liked_by_user":false,"current_user_collections":[],"sponsorship":null,"user":{"id":"gVqrdOZxG4E","updated_at":"2021-03-09T08:43:26-05:00","username":"frankielopez","name":"Frankie
+        Lopez","first_name":"Frankie","last_name":"Lopez","twitter_username":null,"portfolio_url":"https://www.stubborn5.com","bio":"i
+        really have no idea what i''m doing *** just point and shoot","location":"Tucson,
+        AZ","links":{"self":"https://api.unsplash.com/users/frankielopez","html":"https://unsplash.com/@frankielopez","photos":"https://api.unsplash.com/users/frankielopez/photos","likes":"https://api.unsplash.com/users/frankielopez/likes","portfolio":"https://api.unsplash.com/users/frankielopez/portfolio","following":"https://api.unsplash.com/users/frankielopez/following","followers":"https://api.unsplash.com/users/frankielopez/followers"},"profile_image":{"small":"https://images.unsplash.com/profile-1553406943088-6ada29d5b52a?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=32\u0026w=32","medium":"https://images.unsplash.com/profile-1553406943088-6ada29d5b52a?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=64\u0026w=64","large":"https://images.unsplash.com/profile-1553406943088-6ada29d5b52a?ixlib=rb-1.2.1\u0026q=80\u0026fm=jpg\u0026crop=faces\u0026cs=tinysrgb\u0026fit=crop\u0026h=128\u0026w=128"},"instagram_username":"stubborn5design/","total_collections":0,"total_likes":108,"total_photos":157,"accepted_tos":true,"for_hire":true},"exif":{"make":"Canon","model":"Canon
+        EOS 6D Mark II","exposure_time":"1/500","aperture":"8.0","focal_length":"24.0","iso":1250},"location":{"title":"Denver,
+        CO, USA","name":"Denver, CO, USA","city":"Denver","country":"United States","position":{"latitude":39.739236,"longitude":-104.990251}},"views":4336,"downloads":110}]'
+  recorded_at: Tue, 09 Mar 2021 15:32:49 GMT
+recorded_with: VCR 6.0.0
