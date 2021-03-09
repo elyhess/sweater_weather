@@ -60,6 +60,7 @@ describe "Backgrounds API" do
 			get '/api/v1/backgrounds'
 
 			data = JSON.parse(response.body, symbolize_names: true)
+			expect(response.status).to eq(400)
 			expect(data).to be_a(Hash)
 			expect(data[:error]).to be_a(String)
 			expect(data[:error]).to eq("Location missing or incorrectly entered.")
@@ -69,13 +70,11 @@ describe "Backgrounds API" do
 			get '/api/v1/backgrounds?location'
 
 			data = JSON.parse(response.body, symbolize_names: true)
+			expect(response.status).to eq(400)
 			expect(data).to be_a(Hash)
 			expect(data[:error]).to be_a(String)
 			expect(data[:error]).to eq("Location missing or incorrectly entered.")
 		end
 
-		it 'returns an error if the location is invalid / cannot be found' do
-
-		end
 	end
 end
