@@ -2,7 +2,7 @@
 ![](https://img.shields.io/badge/Ruby-2.5.3-orange)
 ![](https://img.shields.io/badge/Rails-5.2.4-informational?style=flat&logo=<LOGO_NAME>&logoColor=white&color=2bbc8a)
 # Sweater Weather API
-<hr>
+
 
 ## About This Project
 Sweater weather is a rails API backend framework that calls multiple API's to return weather forecast data for a location with an accompanying background picture. Sweater weather returns current, 8 hour, and 5 day forecasts. A user can register an account, obtain a 24-character unique API key, and create a road-trip. Using the API key users can create road-trips by providing origin and destination locations and are served the estimated travel time in addition to temperature and weather condition upon arrival. For more information check out the [Project Overview](https://backend.turing.io/module3/projects/sweater_weather/requirements).
