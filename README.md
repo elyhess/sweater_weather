@@ -59,4 +59,4 @@ To get a local copy up and running follow these steps.
 * [Turing School of Software & Design](https://turing.io/) 
 
 ## License
-* Distributed under the MIT License. See [License]() for more information.
+* Distributed under the MIT License. See [License](https://github.com/elyhess/sweater_weather/blob/main/LICENSE) for more information.
