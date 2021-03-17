@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 10 Mar 2021 00:59:38 GMT
+      - Wed, 17 Mar 2021 16:48:19 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -35,7 +35,7 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Wed, 10 Mar 2021 00:59:38 GMT
+      - Wed, 17 Mar 2021 16:48:19 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
@@ -43,7 +43,7 @@ http_interactions:
       Server:
       - Apache-Coyote/1.1
       Set-Cookie:
-      - JSESSIONID=C623C204EE583C426A77D8988F8604C8; Path=/; HttpOnly
+      - JSESSIONID=EE23A1FA928DFABD392462DD6834F3A3; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -53,7 +53,7 @@ http_interactions:
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2021 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
         2021 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Boulder,co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Boulder","adminArea5Type":"City","adminArea4":"Boulder
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039983","unknownInput":"","type":"s","latLng":{"lat":40.015831,"lng":-105.27927},"displayLatLng":{"lat":40.015831,"lng":-105.27927},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<mapquest_key>&type=map&size=225,160&locations=40.015831,-105.27927|marker-sm-50318A-1&scalebar=true&zoom=12&rand=703258112"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Boulder
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282931994","unknownInput":"","type":"s","latLng":{"lat":40.015831,"lng":-105.27927},"displayLatLng":{"lat":40.015831,"lng":-105.27927},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<mapquest_key>&type=map&size=225,160&locations=40.015831,-105.27927|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-1721893280"}]}]}'
-  recorded_at: Wed, 10 Mar 2021 00:59:38 GMT
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282039983","unknownInput":"","type":"s","latLng":{"lat":40.015831,"lng":-105.27927},"displayLatLng":{"lat":40.015831,"lng":-105.27927},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<mapquest_key>&type=map&size=225,160&locations=40.015831,-105.27927|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1766390777"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Boulder
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282931994","unknownInput":"","type":"s","latLng":{"lat":40.015831,"lng":-105.27927},"displayLatLng":{"lat":40.015831,"lng":-105.27927},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=<mapquest_key>&type=map&size=225,160&locations=40.015831,-105.27927|marker-sm-50318A-2&scalebar=true&zoom=9&rand=1844355097"}]}]}'
+  recorded_at: Wed, 17 Mar 2021 16:48:19 GMT
 recorded_with: VCR 6.0.0
